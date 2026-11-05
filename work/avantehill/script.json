@@ -1,0 +1,108 @@
+{
+  "slug": "avantehill",
+  "type": "란빵 자동차, 신차 시승 이슈",
+  "source": "오토뷰 2027 현대 아반떼 리뷰 https://www.youtube.com/watch?v=p-fojL1Acdc 07:41 언덕 밀림 특성 (레퍼런스: 이슈쿠키 TxbY0b4oBC0)",
+  "title_line1": "오르막서 밀리다",
+  "title_line2": "시동 꺼진 신형 아반떼",
+  "hook": "오토뷰 언덕 밀림 시험, 동급 대비 주의",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "오토뷰 언덕 밀림 시험, 동급 대비 주의",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "어? 시동이 꺼져 버렸네요.",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "신형 아반떼가 오르막 시험 중에 진짜로 시동이 꺼져버림.",
+      "em": [
+        "시동이 꺼져버림"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "오토뷰가 언덕에서 브레이크를 떼고 얼마나 밀리는지 봤는데",
+      "em": [
+        "언덕에서"
+      ],
+      "img": 1
+    },
+    {
+      "text": "3초쯤 지나자 차가 뒤로 슬슬 밀리기 시작함.",
+      "say": "삼 초쯤 지나자 차가 뒤로 슬슬 밀리기 시작함.",
+      "em": [
+        "3초쯤"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "근데 밀리다가 퍽 소리와 함께 시동이 그냥 꺼짐.",
+      "em": [
+        "퍽"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "다시 해봐도 퍽 하고 꺼지더니 그대로 쭉 밀려버림.",
+      "em": [
+        "그대로 쭉"
+      ],
+      "img": 1
+    },
+    {
+      "text": "오토뷰 평가는 동급 모델 대비 주의 등급임.",
+      "em": [
+        "주의 등급"
+      ],
+      "em_color": "red",
+      "img": 1
+    },
+    {
+      "text": "천천히 밀리는 건 그럴 수 있어도, 시동이 꺼지는 건 이상적이지 않다고 함.",
+      "em": [
+        "이상적이지 않다"
+      ],
+      "img": 1
+    },
+    {
+      "text": "다른 회사처럼 밀림을 감지하면 브레이크를 잡아주는 게 맞다는 거임.",
+      "em": [
+        "브레이크를 잡아주는"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "다른 차들은 안 그랬는데, 이 차만 그래서 사실 놀랐거든요.",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "님들은 언덕에서 시동 꺼지면 침착하게 대처 가능함?",
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}

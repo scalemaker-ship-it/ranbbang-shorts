@@ -1,0 +1,99 @@
+{
+  "slug": "rtrevenge",
+  "type": "란빵 자동차, 보배드림",
+  "source": "보배드림 베스트 1041011 (2026-10-19, 추천 157, 댓글 18, JTBC 한블리 캡처)",
+  "title_line1": "우회전 비켜달라더니",
+  "title_line2": "화 한 번에 900만원",
+  "hook": "직진 우회전 겸용 차로에서 생긴 일",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "직진 우회전 겸용 차로에서 생긴 일",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "빼 줄 이유가 없지, 나가면 내가 위반하는 거야.",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "normal",
+      "img": 1
+    },
+    {
+      "text": "직진이랑 우회전 같이 되는 차로에서 빨간불 기다리는데, 뒤차가 빵빵거림.",
+      "em": [
+        "빵빵거림"
+      ],
+      "img": 1
+    },
+    {
+      "text": "우회전하게 비켜달라는 거였는데, 비켜주려면 정지선을 넘어야 했음.",
+      "em": [
+        "정지선"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "초록불 켜지자 뒤차가 칼치기에 보복운전까지 함.",
+      "em": [
+        "보복운전"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "우회전 차선 아니야 거기가?!",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "차에서 내려 욕까지 퍼부었고, 남편은 바로 경찰을 부름.",
+      "em": [
+        "경찰"
+      ],
+      "img": 1
+    },
+    {
+      "text": "결과는 벌금 500만원.",
+      "say": "결과는 벌금 오백마넌.",
+      "em": [
+        "500만원"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "민사에선 부부한테 위자료 200만원씩, 400만원을 더 물어줌.",
+      "say": "민사에선 부부한테 위자료 이백마넌씩, 사백마넌을 더 물어줌.",
+      "em": [
+        "200만원씩"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "화 한 번 잘못 내서 900만원을 날린 거임.",
+      "say": "화 한 번 잘못 내서 구백마넌을 날린 거임.",
+      "img": 1
+    },
+    {
+      "text": "님들은 뒤에서 빵빵거리면 비켜줌?",
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}

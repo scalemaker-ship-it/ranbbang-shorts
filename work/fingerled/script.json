@@ -1,0 +1,109 @@
+{
+  "slug": "fingerled",
+  "type": "란빵 자동차, 신차 뉴스",
+  "source": "인스타 릴스 @the.flipbuddy 2026-10-17 (instagram.com/reel/DenJlGdCSIv)",
+  "title_line1": "앞차 뒷유리에 이게 뜨면",
+  "title_line2": "한국에선 바로 벌금",
+  "hook": "미국 유행 차량용 LED 손가락",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "미국 유행 차량용 LED 손가락",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "와, 앞차 뒷유리에 이게 뜬다고?",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "요즘 미국에서 난리 난 차량용 LED 손가락 표시기임.",
+      "say": "요즘 미국에서 난리 난 차량용 엘이디 손가락 표시기임.",
+      "em": [
+        "LED 손가락"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "원래 영상 제목이 어른 돈으로 산 최고의 물건이래요ㅋㅋ",
+      "say": "원래 영상 제목이 어른 돈으로 산 최고의 물건이래요ㅋㅋ",
+      "em": [
+        "최고의 물건"
+      ],
+      "img": 1
+    },
+    {
+      "text": "빗길 고속도로에서 차 한 대가 앞으로 쑥 끼어들더니",
+      "em": [
+        "끼어들더니"
+      ],
+      "img": 1
+    },
+    {
+      "text": "뒷유리에 가운데 손가락이 번쩍 켜짐.",
+      "em": [
+        "번쩍"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "밤에 신호 대기하다 켰더니 옆 차 운전자가 창문 밖으로 몸을 내밀어 버림.",
+      "em": [
+        "몸을 내밀어"
+      ],
+      "img": 1
+    },
+    {
+      "text": "아니 이거 바로 싸움 나는 거 아님?",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "근데 한국에서 이거 달고 다니면 바로 처벌 대상임.",
+      "em": [
+        "처벌 대상"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "도로교통법상 욕설이나 혐오감 주는 그림, 기호를 차에 표시하면 안 되거든.",
+      "em": [
+        "혐오감"
+      ],
+      "img": 1
+    },
+    {
+      "text": "걸리면 30만원 이하 벌금이나 구류까지 받을 수 있음.",
+      "say": "걸리면 삼십마넌 이하 벌금이나 구류까지 받을 수 있음.",
+      "em": [
+        "30만원"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "님들은 앞차에 이거 뜨면 어떻게 함?",
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}

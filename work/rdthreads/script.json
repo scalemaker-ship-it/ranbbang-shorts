@@ -1,0 +1,111 @@
+{
+  "slug": "rdthreads",
+  "type": "란빵 자동차, 테슬라 로드스터 시리즈(스레드 창작물 소개)",
+  "source": "스레드 @namul_34 @lim.808 @jayjay808bs @solrr.aa @story_spoon @seonkangmin (2026-10-16~17)",
+  "title_line1": "지금 테슬라 밈이",
+  "title_line2": "미쳤다는데 ㅋㅋ",
+  "hook": "하늘 나는 테슬라 보고 사람들이 만든 것들",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "하늘 나는 테슬라 보고 사람들이 만든 것들",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "지금 테슬라 밈이 미쳤다는데 ㅋㅋ",
+      "say": "지금 테슬라 밈이 미쳤다는데, 푸핰!",
+      "em": [
+        "밈이 미쳤다"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "엥? 이게 뭐죠? 경찰이 길을 다 막았더니 그냥 위로 넘어가 버림",
+      "em": [
+        "위로 넘어가"
+      ],
+      "img": 1
+    },
+    {
+      "text": "아놔, 이러면 경찰은 어떻게 쫓아갈까요?",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "surprise",
+      "img": 1
+    },
+    {
+      "text": "그래서 한국 톨게이트는 대비 끝남. 점프는 여기서 끝, 그물까지 쳐놨음 ㅋㅋ",
+      "say": "그래서 한국 톨게이트는 대비 끝남. 점프는 여기서 끝, 그물까지 쳐놨음, 푸핰!",
+      "em": [
+        "그물"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "아니 이건 또 뭐죠? 터널 천장에 로드스터 전용 차로가 생김.",
+      "em": [
+        "천장에"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "심지어 통행료가 7만원이라네 ㅋㅋ",
+      "say": "심지어 통행료가 칠마넌이라네, 푸핰!",
+      "em": [
+        "7만원"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "시승기도 올라왔는데, 출발하자마자 강아지랑 케이크가 같이 날아감.",
+      "em": [
+        "케이크"
+      ],
+      "img": 1
+    },
+    {
+      "text": "와, 내 케이크!",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "angry",
+      "img": 1
+    },
+    {
+      "text": "부산에선 부캉이랑 같이 바다 위를 날아다님.",
+      "em": [
+        "부캉이"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "급기야 로드스터 게임을 직접 만든 사람까지 등장했는데,",
+      "em": [
+        "게임"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "님들은 이것 중에 뭐가 제일 웃김?",
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}

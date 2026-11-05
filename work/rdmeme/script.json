@@ -1,0 +1,108 @@
+{
+  "slug": "rdmeme",
+  "type": "란빵 자동차, 테슬라 로드스터 시리즈",
+  "source": "AOL/dnyuz 2026-10-16 'Tesla's flying car is here, and so are the memes', Twitchy 2026-10-16",
+  "title_line1": "테슬라가 날자마자",
+  "title_line2": "전세계 밈 대폭발",
+  "hook": "차 5대 뛰어넘은 테슬라, 몇 분 만에 밈 됨",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "차 5대 뛰어넘은 테슬라, 몇 분 만에 밈 됨",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "면허증 좀 보여주시... 오 마이 갓!",
+      "say": "면허증 좀 보여주시... 오, 마이 갓!",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "surprise",
+      "img": 1
+    },
+    {
+      "text": "테슬라 로드스터가 차 5대를 날아서 넘자, 몇 분 만에 전 세계 밈이 쏟아짐.",
+      "say": "테슬라 로드스터가 차 다섯 대를 날아서 넘자, 몇 분 만에 전 세계 밈이 쏟아짐.",
+      "em": [
+        "몇 분 만에"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "1등은 단연 1차로 거북이 참교육 밈임.",
+      "say": "일 등은 단연 일 차로 거북이 참교육 밈임.",
+      "em": [
+        "1차로 거북이"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "앞에서 10킬로 느리게 가면, 그냥 위로 넘어가면 되잖아?",
+      "say": "앞에서 십 킬로 느리게 가면, 그냥 위로 넘어가면 되잖아?",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "꽉 막힌 출근길도 이제 남 얘기라는 밈도 터짐.",
+      "em": [
+        "출근길"
+      ],
+      "img": 1
+    },
+    {
+      "text": "근데 현실 버전도 있음. 교차로 하나 넘었더니 10달러짜리 커피가 다 쏟아짐.",
+      "say": "근데 현실 버전도 있음. 교차로 하나 넘었더니 십 달러짜리 커피가 다 쏟아짐.",
+      "em": [
+        "커피"
+      ],
+      "img": 1
+    },
+    {
+      "text": "고속도로엔 킥플립 주의 표지판이 새로 생길 거라는 밈까지 나옴.",
+      "em": [
+        "킥플립 주의"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "이거 사고 나면 과실은 몇 대 몇으로 잡아요?",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "angry",
+      "img": 1
+    },
+    {
+      "text": "그리고 다들 진짜 궁금해한 건, 시연할 때 사람이 탔냐는 거였음.",
+      "img": 1
+    },
+    {
+      "text": "정답은 무인. 시연 차는 사람 없이 스스로 날았음.",
+      "em": [
+        "무인"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "님들이 뽑은 최고 밈은 뭐임?",
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}

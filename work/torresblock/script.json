@@ -1,0 +1,100 @@
+{
+  "slug": "torresblock",
+  "type": "란빵 자동차, 보배드림",
+  "source": "보배드림 베스트 1041061 (2026-10-19, 추천 586, 댓글 50)",
+  "title_line1": "주차장 입구 막고",
+  "title_line2": "그 안에서 잠든 차주",
+  "hook": "안에 갇힌 차 2대, 오후 1시에야 뺌",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "안에 갇힌 차 2대, 오후 1시에야 뺌",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "저기요, 차 좀 빼주세요. 안에서 못 나가요.",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "건물 주차장 입구 한가운데를 흰색 토레스 한 대가 딱 막고 서 있음.",
+      "em": [
+        "한가운데"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "렌터카인데, 차주는 그 안에서 잠을 자고 있었음.",
+      "em": [
+        "잠을"
+      ],
+      "img": 1
+    },
+    {
+      "text": "그 바람에 안에 있던 차 두 대는 꼼짝없이 갇힘.",
+      "em": [
+        "두 대"
+      ],
+      "img": 1
+    },
+    {
+      "text": "아니 남 자는데 왜 깨우고 난리예요?",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "항의하니까 오히려 화를 내고, 볼일 다 보고 오후 1시에야 차를 뺌.",
+      "say": "항의하니까 오히려 화를 내고, 볼일 다 보고 오후 한시에야 차를 뺌.",
+      "em": [
+        "오후 1시"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "더 황당한 건 평소에도 입구에 대는 상습범이라는 거.",
+      "em": [
+        "상습범"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "근데 건물 주차장 입구는 도로교통법 주차금지 장소에 따로 안 적혀 있음.",
+      "em": [
+        "따로 안 적혀"
+      ],
+      "img": 1
+    },
+    {
+      "text": "그래서 댓글에선 구청에 노란선 그어달라고 해서 신고하라는 팁이 나옴.",
+      "em": [
+        "노란선"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "님들은 입구 막고 자는 차 만나면 어떻게 함?",
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}

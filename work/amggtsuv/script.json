@@ -1,0 +1,97 @@
+{
+  "slug": "amggtsuv",
+  "type": "란빵 자동차, 신차",
+  "source": "Mercedes-AMG GT SUV 공개 2026-10-17 (MBUSA 보도자료, 다나와 6071843, 오토뷰 102133)",
+  "title_line1": "천 마력 넘는 SUV",
+  "title_line2": "벤츠가 진짜 만들었다",
+  "hook": "메르세데스 AMG 전기 GT SUV 공개",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "메르세데스 AMG 전기 GT SUV 공개",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "SUV가 저렇게 미끄러진다고?",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "벤츠 AMG가 독일에서 전기 GT SUV를 공개했는데, 출력이 1169마력임.",
+      "say": "벤츠 에이엠지가 독일에서 전기 지티 에스유브이를 공개했는데, 출력이 천백육십구마력임.",
+      "em": [
+        "1169마력"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "모터만 세 개에 시속 100킬로까지 2.7초.",
+      "say": "모터만 세 개에 시속 백킬로까지 이점칠초.",
+      "em": [
+        "2.7초"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "그것도 납작한 축방향 자속 모터라는 신기술임.",
+      "em": [
+        "축방향 자속 모터"
+      ],
+      "img": 1
+    },
+    {
+      "text": "충전은 최대 710킬로와트라 10분 꽂으면 최대 450킬로를 감.",
+      "say": "충전은 최대 칠백십킬로와트라 십분 꽂으면 최대 사백오십킬로를 감.",
+      "em": [
+        "10분"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "이 정도면 장 보러 갈 때도 드리프트 하는 거 아님?",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "독일 시작 가격은 GT 53 기준 11만 유로가 넘음.",
+      "say": "독일 시작 가격은 지티 오십삼 기준 십일만 유로가 넘음.",
+      "em": [
+        "11만 유로"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "미국 출시는 2027년 여름인데, 한국 출시 계획은 아직 발표가 없음.",
+      "say": "미국 출시는 이천이십칠년 여름인데, 한국 출시 계획은 아직 발표가 없음.",
+      "em": [
+        "한국 출시"
+      ],
+      "img": 1
+    },
+    {
+      "text": "님들은 천 마력 넘는 SUV, 어디다 쓸 것 같음?",
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}

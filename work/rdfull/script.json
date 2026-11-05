@@ -1,0 +1,104 @@
+{
+  "slug": "rdfull",
+  "type": "란빵 자동차, 테슬라 로드스터 시리즈",
+  "source": "Tesla 공식 'Roadster Event'(qt5p-_tE8d0) 시연 4종",
+  "title_line1": "테슬라 로드스터",
+  "title_line2": "시연 풀영상",
+  "hook": "벽타기부터 차 5대 점프, 0.81초까지",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "벽타기부터 차 5대 점프, 0.81초까지",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "와, 이걸 진짜 차가 한다고?",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "첫 번째 시연, 차가 수직 벽을 그대로 타고 올라감.",
+      "em": [
+        "수직 벽"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "꼭대기에선 아예 거꾸로 매달려서 달림.",
+      "em": [
+        "거꾸로"
+      ],
+      "img": 1
+    },
+    {
+      "text": "그대로 벽에서 뛰어내려서, 공중에서 한 바퀴 돌고 착지함.",
+      "em": [
+        "한 바퀴"
+      ],
+      "img": 1
+    },
+    {
+      "text": "미친, 착지까지 한다고?",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "surprise",
+      "img": 1
+    },
+    {
+      "text": "두 번째는 세미트럭까지 차 5대를 일렬로 세워둠.",
+      "say": "두 번째는 세미트럭까지 차 다섯 대를 일렬로 세워둠.",
+      "em": [
+        "5대"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "전속력으로 달려가더니, 몸을 비틀면서 차들 위를 넘어버림.",
+      "img": 1
+    },
+    {
+      "text": "토니 호크도 자랑스러워할걸요. 우린 이걸 킥플립이라 불러요.",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "세 번째는 제로백. 시속 97킬로까지 단 0.81초.",
+      "say": "세 번째는 제로백. 시속 구십칠 키로까지 단 영 점 팔일 초.",
+      "em": [
+        "0.81초"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "마지막엔 연기를 뿜으면서 차들 위로 날아가 버림.",
+      "em": [
+        "날아가"
+      ],
+      "img": 1
+    },
+    {
+      "text": "님들은 이 중에 뭐가 제일 미쳤음?",
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+#!/usr/bin/env python3
+"""란빵 2026-10-20 (2/2): 신차 3 + 자동차용품 2 + 보배드림 1. 헬퍼는 _batch_1020.py.
+- 신차 3편의 차 화면은 제조사 공식 유튜브 영상 정지 장면(work/_b1020_stills.py, 출처 우상단). AI 배경 없음(신차 AI 금지 규칙).
+  수치 교차확인: 토르칼 = 오토뷰·다나와·겟차·모터그래프, AMG GT SUV = MBUSA 보도자료·다나와·오토뷰, CLA = 오토헤럴드 2건·모터그래프·뉴스와.
+- 용품 2편: 네이버 데이터랩 쇼핑인사이트 자동차용품 인기검색어(10/13~10/19) 무시동히터 19위, 휴대폰 거치대 관련어 상위 60위 안 6개.
+  법령은 국가법령정보센터 원문(도로교통법 49조 1항 10·11·11의2호, 자동차관리법 34조·시행규칙 55조).
+- slk200: 보배드림 베스트 1041142.
+"""
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _batch_1020 import B, P, C, L, build, Y, W, R   # noqa: E402
+
+CB = "영상: Bentley"
+CA = "영상: Mercedes-AMG"
+CM = "영상: Mercedes-Benz"
+
+
+def EP_torcal():
+    lines = [
+        L("와, 이게 벤틀리라고?", [P("t_front2", CB, s0=1.05, s1=1.2, punch=True), P("t_run", CB, at="벤틀리")],
+          C("wow", "r"), dialogue=True, speaker=3, emotion="toneup"),
+        L("벤틀리가 첫 순수 전기 SUV 토르칼을 서울에서 아시아 최초로 공개했음.",
+          [P("t_road", CB), P("t_side", CB, at="토르칼", s0=1.0, s1=1.12)], C("biz_surprise"), em=["토르칼"]),
+        L("가격은 국내 기준 3억 3천만원부터.", [P("t_side2", CB, s0=1.0, s1=1.15)], C("bill_shock"),
+          say="가격은 국내 기준 삼억 삼천마넌부터.", em=["3억 3천만원"], em_color="yellow",
+          fx=[("cash_register_fake", "3억", 0.5)],
+          info={"kind": "counter", "at": "3억", "title": "국내 시작 가격", "items": [{"num": 3, "suffix": "억 3천만원", "label": "토르칼", "at": "3억"}]}),
+        L("최고 888마력에 시속 100킬로까지 2.9초.",
+          [P("t_front", CB, s0=1.0, s1=1.2, punch=True), P("t_road", CB, at="2.9초", s0=1.3, s1=1.5, fx=0.45, fy=0.55)],
+          C("drv_surprise"), say="최고 팔백팔십팔마력에 시속 백킬로까지 이점구초.", em=["888마력"], em_color="yellow",
+          pop=("2.9초!!", Y, "2.9초"), fx=[("hit_trailer_epic", "2.9초", 0.5)]),
+        L("배터리는 113킬로와트시, 한 번 충전으로 유럽 기준 600킬로를 감.",
+          [P("t_wheel", CB, s0=1.0, s1=1.12)], C("drv_idea"),
+          say="배터리는 백십삼킬로와트시, 한 번 충전으로 유럽 기준 육백킬로를 감.", em=["600킬로"]),
+        L("400킬로와트 충전기면 10%에서 80%까지 16분.", [P("t_badge", CB, s0=1.0, s1=1.15)], C("biz_idea"),
+          say="사백킬로와트 충전기면 십퍼센트에서 팔십퍼센트까지 십육분.", em=["16분"], em_color="yellow",
+          fx=[("correct_ding", "16분", 0.5)]),
+        L("근데 호불호 갈리는 건 불 들어오는 다이아몬드 그릴임.",
+          [P("t_front2", CB, s0=1.4, s1=1.6, fx=0.5, fy=0.5)], C("biz_think"), em=["다이아몬드 그릴"]),
+        L("전기차에 굳이 저 그릴이 필요함?", [P("t_front", CB, s0=1.5, s1=1.7, fx=0.5, fy=0.5)], C("biz_angry", "r"),
+          dialogue=True, speaker=2, emotion="toneup", fx=[("wrong_gameshow_buzz", "필요함", 0.4)]),
+        L("해외 칼럼은 싸 보인다고 혹평했는데, 실물 보고 생각이 바뀌었다는 기자도 있음.",
+          [P("t_side", CB, s0=1.15, s1=1.0), P("t_cabin", CB, at="실물")], C("wow", "r"), em=["싸 보인다"]),
+        L("문제는 지금 계약해도 국내 인도는 2027년 말이라는 거.", [P("t_road", CB, s0=1.2, s1=1.05)], C("komatta"),
+          say="문제는 지금 계약해도 국내 인도는 이천이십칠년 말이라는 거.", em=["2027년 말"], em_color="yellow",
+          fx=[("drop_futuristic", "2027년", 0.5)]),
+        L("님들은 3억 3천 주고 1년 넘게 기다릴 수 있음?", [P("t_run", CB, s0=1.0, s1=1.12)], C("biz_q"),
+          say="님들은 삼억 삼천 주고 일년 넘게 기다릴 수 있음?", fx=[("pop_bubble", "있음")]),
+    ]
+    build("torcal", lines, "벤틀리 첫 전기 SUV", "3억 3천인데 1년 대기", "벤틀리 토르칼 아시아 최초 공개",
+          "#3억 벤틀리 전기차", "벤틀리 토르칼 국내 공개 2026-10-15 (오토뷰 102074, 다나와 6070719, 겟차, 모터그래프 44732)",
+          [("10/15 서울에서 아시아 최초 공개, 같은 날 국내 주문 시작", "오토뷰·다나와·겟차"),
+           ("국내가 3억 3,000만원부터", "오토뷰·다나와"),
+           ("토르칼 S 888마력(런치컨트롤 시), 0-100 2.9초 / 기본형 821마력 3.4초", "오토뷰·모터그래프"),
+           ("113kWh, 800V, WLTP 600km, 400kW 충전 10→80% 16분", "오토뷰·다나와"),
+           ("조명 다이아몬드 그릴 '싸 보인다' 칼럼", "electrifying.com 'Back off the bling, Bentley'"),
+           ("실물 보고 생각이 바뀐 기자", "더팩트 영상 기사 2376933"),
+           ("국내 인도 2027년 말", "오토뷰·겟차"),
+           ("화면", "Bentley Motors 공식 유튜브 mRjNt7S6FVA 정지 장면")],
+          "벤틀리 첫 순수 전기 SUV 토르칼이 서울에서 아시아 최초 공개됐습니다.\n3억 3천만원부터, 888마력, 0-100km/h 2.9초, 국내 인도는 2027년 말.\n님들은 1년 넘게 기다릴 수 있나요?\n\n#벤틀리 #토르칼 #전기차 #신차 #란빵",
+          "님들은 3억 3천 주고 1년 넘게 기다릴 수 있음?",
+          "차량용 무선충전 거치대, 자동차 블랙박스 2채널, 차량용 방향제, 전기차 충전케이블 거치대, 차량용 공기청정기",
+          "", [P("t_side2", CB, s0=1.0, s1=1.1)], typ="란빵 자동차, 신차")
+
+
+def EP_amggtsuv():
+    lines = [
+        L("SUV가 저렇게 미끄러진다고?", [P("a_drift2", CA, s0=1.0, s1=1.2, punch=True), P("a_smoke", CA, at="미끄러진다고")],
+          C("wow", "r"), dialogue=True, speaker=3, emotion="toneup", fx=[("boom_zoom_impact", "미끄러진다고", 0.4)]),
+        L("벤츠 AMG가 독일에서 전기 GT SUV를 공개했는데, 출력이 1169마력임.",
+          [P("a_track", CA), P("a_studioy", CA, at="1169마력", s0=1.1, s1=1.3, punch=True)], C("biz_surprise"),
+          say="벤츠 에이엠지가 독일에서 전기 지티 에스유브이를 공개했는데, 출력이 천백육십구마력임.",
+          em=["1169마력"], em_color="yellow", pop=("1169마력?!", Y, "1169마력"), fx=[("hit_trailer_epic", "1169마력", 0.5)]),
+        L("모터만 세 개에 시속 100킬로까지 2.7초.", [P("a_yellow", CA), P("a_yel2", CA, at="2.7초", s0=1.0, s1=1.2, punch=True)],
+          C("drv_surprise"), say="모터만 세 개에 시속 백킬로까지 이점칠초.", em=["2.7초"], em_color="yellow",
+          fx=[("drop_futuristic", "2.7초", 0.5)]),
+        L("그것도 납작한 축방향 자속 모터라는 신기술임.", [P("a_wheel", CA, s0=1.0, s1=1.15), P("a_cockpit", CA, at="신기술")],
+          C("biz_idea"), em=["축방향 자속 모터"]),
+        L("충전은 최대 710킬로와트라 10분 꽂으면 최대 450킬로를 감.",
+          [P("a_run", CA, s0=1.0, s1=1.15), P("a_track", CA, at="450킬로", s0=1.3, s1=1.45, fx=0.5, fy=0.5)], C("drv_idea"),
+          say="충전은 최대 칠백십킬로와트라 십분 꽂으면 최대 사백오십킬로를 감.", em=["10분"], em_color="yellow",
+          info={"kind": "counter", "at": "450킬로", "title": "10분 충전", "items": [{"num": 450, "suffix": "km", "label": "최대 주행", "at": "450킬로"}]}),
+        L("이 정도면 장 보러 갈 때도 드리프트 하는 거 아님?", [P("a_plate", CA, s0=1.0, s1=1.15)], C("drv_laugh", "r"),
+          dialogue=True, speaker=2, emotion="toneup", fx=[("drum_rimshot", "드리프트", 0.45)]),
+        L("독일 시작 가격은 GT 53 기준 11만 유로가 넘음.", [P("a_studioy", CA, s0=1.2, s1=1.05)], C("bill_shock"),
+          say="독일 시작 가격은 지티 오십삼 기준 십일만 유로가 넘음.", em=["11만 유로"], em_color="yellow",
+          fx=[("cash_register_fake", "11만", 0.5)]),
+        L("미국 출시는 2027년 여름인데, 한국 출시 계획은 아직 발표가 없음.",
+          [P("a_yellow", CA, s0=1.3, s1=1.15, fx=0.5, fy=0.5)], C("komatta"),
+          say="미국 출시는 이천이십칠년 여름인데, 한국 출시 계획은 아직 발표가 없음.", em=["한국 출시"],
+          fx=[("wrong_gameshow_buzz", "아직", 0.4)]),
+        L("님들은 천 마력 넘는 SUV, 어디다 쓸 것 같음?", [P("a_drift2", CA, s0=1.0, s1=1.12)], C("biz_q"),
+          fx=[("pop_bubble", "같음")]),
+    ]
+    build("amggtsuv", lines, "천 마력 넘는 SUV", "벤츠가 진짜 만들었다", "메르세데스 AMG 전기 GT SUV 공개",
+          "#천 마력 SUV", "Mercedes-AMG GT SUV 공개 2026-10-17 (MBUSA 보도자료, 다나와 6071843, 오토뷰 102133)",
+          [("10/17 슈투트가르트 공개, 미국 출시 2027년 여름, 국내 출시 계획 발표 없음", "MBUSA 보도자료·다나와"),
+           ("GT 63 1,169마력(국내 보도 PS 기준, 공식 1,153hp)", "다나와·오토뷰 / MBUSA"),
+           ("축방향 자속 모터 3개, 0-100 2.7초", "MBUSA·오토뷰"),
+           ("최대 710kW 충전, 10분 충전 최대 450km(WLTP)", "MBUSA·오토뷰(영상 자막 '450 KILOMETRES OF WLTP RANGE IN 10 MINUTES')"),
+           ("독일 GT 53 시작가 €113,050", "다나와"),
+           ("화면", "Mercedes-AMG 공식 유튜브 WjJN7rXwKXc 정지 장면(인물 없는 장면만)")],
+          "메르세데스 AMG가 전기 GT SUV를 공개했습니다.\n1169마력, 모터 3개, 0-100km/h 2.7초, 10분 충전에 최대 450km.\n님들은 천 마력 SUV 어디에 쓸 것 같나요?\n\n#AMG #벤츠 #전기차 #신차 #란빵",
+          "님들은 천 마력 넘는 SUV, 어디다 쓸 것 같음?",
+          "차량용 무선충전 거치대, 자동차 블랙박스 2채널, 차량용 방향제, 차량용 공기청정기, 전기차 충전케이블 거치대",
+          "", [P("a_track", CA, s0=1.0, s1=1.1)], typ="란빵 자동차, 신차")
+
+
+def EP_claev():
+    lines = [
+        L("792킬로 간다며? 근데 왜 474야?", [P("c_hud", CM, s0=1.05, s1=1.2)], C("biz_angry", "r"),
+          dialogue=True, speaker=3, emotion="toneup", say="칠백구십이킬로 간다며? 근데 왜 사백칠십사야?"),
+        L("벤츠 전기 CLA가 10월 19일 한국에 정식 출시됐음.",
+          [P("c_front2", CM), P("c_grille", CM, at="정식", s0=1.0, s1=1.15, punch=True)], C("dealer"),
+          say="벤츠 전기 씨엘에이가 시월 십구일 한국에 정식 출시됐음.", em=["전기 CLA"]),
+        L("가격은 5290만원부터 6770만원까지.", [P("c_side", CM, s0=1.0, s1=1.12)], C("bill_shock"),
+          say="가격은 오천이백구십마넌부터 육천칠백칠십마넌까지.", em=["5290만원"], em_color="yellow",
+          info={"kind": "bars", "title": "국내 가격", "items": [
+              {"label": "CLA 200 에센셜", "value": 0.78, "num": 5290, "suffix": "만원", "color": W, "at": "5290만원"},
+              {"label": "250+ AMG 라인", "value": 1.0, "num": 6770, "suffix": "만원", "color": Y, "at": "6770만원"}]}),
+        L("사전계약만 약 2500대가 몰렸음.", [P("c_street", CM, s0=1.0, s1=1.15)], C("biz_surprise"),
+          say="사전계약만 약 이천오백대가 몰렸음.", em=["2500대"], fx=[("drop_futuristic", "2500대", 0.5)]),
+        L("핵심은 주행거리인데, 유럽 기준으론 한 번 충전에 792킬로를 감.",
+          [P("c_rush", CM), P("c_front2", CM, at="792킬로", s0=1.2, s1=1.35, fx=0.5, fy=0.5)], C("drv_idea"),
+          say="핵심은 주행거리인데, 유럽 기준으론 한 번 충전에 칠백구십이킬로를 감.", em=["792킬로"]),
+        L("근데 국내 인증 받으니 474킬로, 겨울 저온에선 374킬로까지 내려감.",
+          [P("c_charge", CM, s0=1.0, s1=1.12), P("c_screen", CM, at="374킬로")], C("sick"),
+          say="근데 국내 인증 받으니 사백칠십사킬로, 겨울 저온에선 삼백칠십사킬로까지 내려감.", em=["474킬로"], em_color="yellow",
+          fx=[("wrong_gameshow_buzz", "474킬로", 0.45)],
+          info={"kind": "bars", "title": "CLA 250+ 주행거리", "items": [
+              {"label": "유럽 WLTP", "value": 1.0, "num": 792, "suffix": "km", "color": W},
+              {"label": "국내 인증", "value": 0.6, "num": 474, "suffix": "km", "color": Y, "at": "474킬로"},
+              {"label": "국내 저온", "value": 0.47, "num": 374, "suffix": "km", "color": R, "at": "374킬로", "flash": "374킬로"}]}),
+        L("그래서 아이오닉6 상위 트림이랑 550만원 차이라는 비교까지 나옴.",
+          [P("c_sunset", CM, s0=1.35, s1=1.5, fx=0.6, fy=0.68)], C("biz_think"),
+          say="그래서 아이오닉식스 상위 트림이랑 오백오십마넌 차이라는 비교까지 나옴.", em=["550만원"], em_color="yellow"),
+        L("가격 더 낮춘 모델은 당장 검토하지 않습니다.", [P("c_grille", CM, s0=1.3, s1=1.45)], C("biz_smile", "r"),
+          dialogue=True, speaker=2, emotion="normal", fx=[("scratch_vinyl", "당장", 0.45)]),
+        L("출시 현장에서 가격 질문에 벤츠코리아가 한 답임.", [P("c_side", CM, s0=1.3, s1=1.15, fx=0.4, fy=0.5)],
+          C("komatta"), em=["벤츠코리아"]),
+        L("님들은 벤츠 전기 CLA 5천만원대면 삼?", [P("c_front2", CM, s0=1.0, s1=1.12)], C("biz_q"),
+          say="님들은 벤츠 전기 씨엘에이 오천마넌대면 삼?", fx=[("pop_bubble", "삼")]),
+    ]
+    build("claev", lines, "792km 간다던 벤츠", "한국 오니 474km", "벤츠 전기 CLA 국내 출시",
+          "#벤츠 CLA 474km", "벤츠 전기 CLA 국내 출시 2026-10-19 (오토헤럴드 61927·61942, 모터그래프 44747, 뉴스와)",
+          [("10/19 국내 출시, 사전계약 약 2,500대", "오토헤럴드 61927"),
+           ("CLA 200 에센셜 5,290만원 ~ CLA 250+ AMG 라인 론치 에디션 6,770만원", "오토헤럴드·모터그래프"),
+           ("CLA 250+ WLTP 792km, 국내 인증 474km, 저온 374km", "오토헤럴드·뉴스와"),
+           ("아이오닉6 롱레인지 AWD 프레스티지 6,220만원과 550만원 차이(250+ AMG 라인 기준)", "비교 기사(조사 에이전트 확인)"),
+           ("'가격 더 낮춘 모델이나 마이너스 옵션은 당장 검토하지 않는다'", "오토헤럴드 61942 출시 현장 질의응답"),
+           ("화면", "Mercedes-Benz USA 0grC02nnhGQ, Mercedes-Benz Deutschland dNZoPnaeCPQ 공식 영상 정지 장면")],
+          "벤츠 전기 CLA가 국내 출시됐습니다. 5290만원부터 6770만원.\n유럽 기준 792km인데 국내 인증 474km, 저온 374km.\n님들은 5천만원대 벤츠 전기차 사시겠어요?\n\n#벤츠 #CLA #전기차 #신차 #란빵",
+          "님들은 벤츠 전기 CLA 5천만원대면 삼?",
+          "차량용 무선충전 거치대, 전기차 충전케이블 거치대, 자동차 블랙박스 2채널, 차량용 방향제, 차량용 공기청정기",
+          "", [P("c_street", CM, s0=1.0, s1=1.1)], typ="란빵 자동차, 신차")
+
+
+def EP_heaterco():
+    lines = [
+        L("겨울 차박은 무시동히터 없으면 못 함.",
+          [B("h01", "A small SUV parked at a snowy riverside campsite at night, warm light glowing from inside the rear cabin, cozy car camping setup, snow on the roof")],
+          C("syachu", "r"), dialogue=True, speaker=2, emotion="toneup"),
+        L("시동 끄고도 기름을 따로 태워서 차 안을 데워주는 히터임.",
+          [B("h02", "A compact black diesel parking heater unit with warm air duct installed in the cargo area of a camper van, close-up, realistic product installation"),
+           B("h02", at="데워주는", s0=1.3, s1=1.45, fx=0.5, fy=0.5)],
+          C("biz_idea"), em=["시동 끄고도"]),
+        L("쇼핑 검색 순위에서 자동차용품 19위까지 올라옴.",
+          [B("h01", s0=1.3, s1=1.45, fx=0.55, fy=0.55)], C("wow", "r"), say="쇼핑 검색 순위에서 자동차용품 십구위까지 올라옴.",
+          em=["19위"], em_color="yellow", fx=[("drop_futuristic", "19위", 0.5)]),
+        L("원리는 따로 있는 연소실에서 연료를 태우고, 데운 공기만 실내로 보내는 거.",
+          [B("h03", "Close-up of a parking heater's warm air outlet vent blowing into a car interior, slight heat haze, dim evening light")],
+          C("biz_think"), em=["연소실"]),
+        L("그래서 배기가스는 반드시 차 밖으로 빠져야 하는데,",
+          [B("h04", "Underside of a camper van at night showing a small metal heater exhaust pipe pointing outward with faint white vapor, snowy ground")],
+          C("shinpai"), em=["차 밖으로"]),
+        L("배기관을 잘못 달면 일산화탄소가 차 안으로 샐 수 있음.",
+          [B("h05", "Fogged-up car windows from inside at night, faint grayish haze in the car cabin, ominous mood, sleeping bag on the seat"),
+           B("h05", at="일산화탄소", s0=1.2, s1=1.4, punch=True)],
+          C("sick"), em=["일산화탄소"], em_color="yellow", pop=("일산화탄소!", R, "일산화탄소"), shake="일산화탄소",
+          fx=[("hit_trailer_epic", "일산화탄소", 0.5)]),
+        L("그래서 국가기술표준원이랑 소비자원이 설치 주의 캠페인까지 했음.",
+          [B("h04", s0=1.3, s1=1.45, fx=0.5, fy=0.5)], C("lawyer"), em=["설치 주의"]),
+        L("그럼 그냥 내가 대충 달면 안 됨?", [B("h02", s0=1.1, s1=1.25)], C("drv_q", "r"),
+          dialogue=True, speaker=3, emotion="normal"),
+        L("연료장치를 건드리는 튜닝은 승인 대상이라, 전문 업체 설치랑 승인부터 확인해야 함.",
+          [B("h06", "A professional auto workshop technician's workbench with a parking heater kit, fuel line and tools laid out neatly, garage lighting")],
+          C("seiri"), em=["승인 대상"], em_color="yellow", fx=[("correct_ding", "승인", 0.5)]),
+        L("차박할 땐 일산화탄소 경보기도 꼭 같이 다는 게 좋음.",
+          [B("h07", "A small white carbon monoxide alarm device mounted on the interior side panel of a camper van next to a bed, cozy lamp light")],
+          C("biz_smile"), em=["일산화탄소 경보기"]),
+        L("님들은 겨울 차박할 때 뭘로 버팀?", [B("h01", s0=1.0, s1=1.12)], C("biz_q"), fx=[("pop_bubble", "버팀")]),
+    ]
+    build("heaterco", lines, "차박러 필수템 무시동히터", "잘못 달면 아침에 큰일", "자동차용품 검색 19위, 무시동히터",
+          "#겨울 차박 히터 주의", "네이버 데이터랩 쇼핑인사이트 자동차용품 인기검색어 2026-10-13~19 (무시동히터 19위)",
+          [("자동차용품 인기검색어 19위", "네이버 데이터랩 쇼핑인사이트 10/13~10/19"),
+           ("별도 연소실에서 연료를 태워 열교환기로 온풍, 배기는 차 밖", "제품 원리(일반)"),
+           ("배기관 잘못 설치 시 일산화탄소 중독 위험, 국가기술표준원·소비자원 캠페인", "뉴스서울 2024 기사(newsseoul 1065592215015050)"),
+           ("국토부령 항목 튜닝은 시장·군수·구청장 승인, 승인 대상에 연료장치 포함", "자동차관리법 제34조 1항, 시행규칙 제55조 1항 2호(국가법령정보센터)"),
+           ("무시동히터 자체를 명시한 조문은 확인 안 됨 → '불법' 단정 안 하고 '승인부터 확인'으로만 씀", "")],
+          "겨울 차박 필수템 무시동히터, 쇼핑 검색 순위도 올라왔습니다.\n배기관을 잘못 달면 일산화탄소가 실내로 샐 수 있어 설치와 승인 확인이 먼저입니다.\n님들은 겨울 차박 어떻게 버티시나요?\n\n#무시동히터 #차박 #캠핑 #자동차용품 #란빵",
+          "님들은 겨울 차박할 때 뭘로 버팀?",
+          "무시동히터, 차량용 무시동히터, 일체형 무시동히터, 일산화탄소 경보기, 차박 매트",
+          "", [B("h07", s0=1.0, s1=1.1)], typ="란빵 자동차, 자동차용품")
+
+
+def EP_phonemount():
+    lines = [
+        L("거치대에 꽂아 놨는데 뭐가 문제임?",
+          [B("p02", "A smartphone on a magnetic car phone mount on the dashboard playing a video while the car drives on a highway, screen content blurred, driver's view")],
+          C("drv_q", "r"), dialogue=True, speaker=2, emotion="toneup"),
+        L("요즘 자동차용품 검색 상위 60위 안에 휴대폰 거치대만 6개임.",
+          [B("p01", "A smartphone attached to a sleek MagSafe-style magnetic wireless charging mount on a car air vent, clean modern car interior, daylight")],
+          C("wow", "r"), say="요즘 자동차용품 검색 상위 육십위 안에 휴대폰 거치대만 여섯 개임.", em=["6개"], em_color="yellow",
+          fx=[("drop_futuristic", "6개", 0.5)]),
+        L("특히 자석으로 착 붙는 무선충전 거치대가 대세.", [B("p01", at="착", s0=1.3, s1=1.5, fx=0.5, fy=0.5, punch=True)],
+          C("drv_heart"), em=["무선충전 거치대"], fx=[("correct_ding", "착", 0.5)]),
+        L("근데 거치대에 꽂았다고 다 괜찮은 게 아님.", [B("p02", s0=1.2, s1=1.35)], C("police_angry", "r"),
+          em=["다 괜찮은 게 아님"], fx=[("wrong_gameshow_buzz", "아님", 0.45)]),
+        L("도로교통법상 운전 중엔 운전자가 볼 수 있는 곳에 영상을 띄우면 안 됨.",
+          [B("p02", s0=1.4, s1=1.6, fx=0.5, fy=0.45)], C("lawyer"), em=["영상"], em_color="yellow"),
+        L("내비처럼 길 안내 화면은 예외라 괜찮은데,",
+          [B("p03", "A smartphone in a car dashboard mount showing a navigation map with a route line, generic map without readable text, driving on a city road")],
+          C("navi"), em=["길 안내"]),
+        L("유튜브나 드라마 틀어 놓는 건 안 됨.", [B("p02", s0=1.0, s1=1.15)], C("rage", "r"), em=["유튜브"], em_color="yellow",
+          pop=("안 됨!", R, "안 됨"), shake="안 됨"),
+        L("운전 중에 폰을 손으로 들고 쓰는 것도 금지.",
+          [B("p04", "Close-up of a hand holding a smartphone near the steering wheel while driving, screen blurred, motion blur outside")],
+          C("keitai"), em=["손으로"]),
+        L("통화는 차가 섰을 때나 핸즈프리로만 가능함.",
+          [B("p05", "A car steering wheel with a hands-free call button illuminated, dashboard display blurred, night city lights outside")],
+          C("biz_idea"), em=["핸즈프리"], em_color="yellow"),
+        L("님들은 운전할 때 거치대에 뭐 띄워 놓음?", [B("p01", s0=1.0, s1=1.12)], C("biz_q"), fx=[("pop_bubble", "놓음")]),
+    ]
+    build("phonemount", lines, "거치대에 폰 꽂았는데", "이것까지 걸린다고?", "자동차용품 검색 상위권, 휴대폰 거치대",
+          "#거치대 유튜브 단속", "네이버 데이터랩 쇼핑인사이트 자동차용품 2026-10-13~19 (휴대폰 거치대 관련어 상위 60위 중 6개) + 도로교통법 49조",
+          [("휴대폰 거치대 관련 키워드 상위 60위 안 6개(11·23·32·40·50·56위)", "네이버 데이터랩 쇼핑인사이트 10/13~10/19"),
+           ("운전 중 운전자가 볼 수 있는 위치에 영상 표시 금지, 지리안내 영상 등은 예외", "도로교통법 제49조 1항 11호(국가법령정보센터)"),
+           ("운전 중 휴대용 전화 사용 금지, 정지 중이거나 핸즈프리 장치 사용은 예외", "도로교통법 제49조 1항 10호"),
+           ("운전 중 영상표시장치 조작 금지", "도로교통법 제49조 1항 11의2호"),
+           ("범칙금·벌점 액수는 확인 안 됨 → 대본에서 뺌", "")],
+          "자동차용품 검색 상위권인 휴대폰 거치대, 꽂아 놨다고 다 괜찮은 게 아닙니다.\n운전 중 영상 시청, 손으로 조작은 도로교통법 위반, 길 안내 화면은 예외입니다.\n님들은 거치대에 뭐 띄워 놓으시나요?\n\n#휴대폰거치대 #도로교통법 #운전 #자동차용품 #란빵",
+          "님들은 운전할 때 거치대에 뭐 띄워 놓음?",
+          "맥세이프 차량용 거치대, 차량용 휴대폰 거치대, 차량용 무선충전 거치대, 송풍구 거치대, 대시보드 거치대",
+          "", [B("p03", s0=1.0, s1=1.1)], typ="란빵 자동차, 자동차용품")
+
+
+def EP_slk200():
+    lines = [
+        L("보증보험 되니까 걱정 마세요.",
+          [B("s01", "A silver two-seat Mercedes SLK style convertible roadster parked at a Korean used car dealership complex, rows of used cars, daytime")],
+          C("dealer", "r"), dialogue=True, speaker=2, emotion="normal"),
+        L("부산 사는 글쓴이가 주말 드라이브용으로 2015년식 SLK200을 사기로 함.",
+          [B("s01", s0=1.2, s1=1.35, fx=0.5, fy=0.55)], C("open_man"),
+          say="부산 사는 글쓴이가 주말 드라이브용으로 이천십오년식 에스엘케이 이백을 사기로 함.", em=["SLK200"]),
+        L("유명 유튜버 딜러 영상만 두 달을 보고 수원까지 올라감.",
+          [B("s02", "A smartphone on a cafe table playing a used car review video, screen blurred, coffee cup beside it")],
+          C("drv_heart"), em=["유튜버 딜러"]),
+        L("근데 정작 그 딜러는 안 나오고 다른 상호 딜러가 나옴.", [B("s01", s0=1.0, s1=1.12)], C("komatta"),
+          em=["다른 상호"], fx=[("scratch_vinyl", "다른", 0.45)]),
+        L("엔진경고등까지 떠 있었는데, 보증보험 된다는 말만 믿고 1600만원에 삼.",
+          [B("s03", "Close-up of a car instrument cluster with an orange check engine warning light glowing, slightly worn dashboard"),
+           B("s03", at="1600만원", s0=1.4, s1=1.6, fx=0.5, fy=0.5, punch=True)],
+          C("drv_shock"), say="엔진경고등까지 떠 있었는데, 보증보험 된다는 말만 믿고 천육백마넌에 삼.", em=["엔진경고등", "1600만원"],
+          em_color="yellow", fx=[("hit_trailer_epic", "엔진경고등", 0.4)]),
+        L("보험사 연락까지만 한 달 넘게 걸렸고, 진단은 캠샤프트 센서 오류.",
+          [B("s04", "A mechanic's OBD2 diagnostic scanner plugged into a car under the dashboard in a repair shop, screen blurred")],
+          C("shinpai"), em=["캠샤프트 센서"]),
+        L("그런데 보험사 답은 보험 대상 부품이 아니라 수리 불가.", [B("s04", s0=1.3, s1=1.5, fx=0.5, fy=0.5)],
+          C("bill_shock"), em=["수리 불가"], em_color="yellow", pop=("수리 불가?!", R, "수리 불가"), shake="수리",
+          fx=[("boom_zoom_impact", "수리", 0.5)]),
+        L("저희는 최선 다했어요, 더 해드릴 게 없네요.", [B("s01", s0=1.4, s1=1.55, fx=0.4, fy=0.5)], C("biz_tehe", "r"),
+          dialogue=True, speaker=3, emotion="normal"),
+        L("댓글은 딜러 잘못이라는 쪽이랑, 경고등 뜬 차를 그냥 산 게 문제라는 쪽으로 갈림.",
+          [B("s03", s0=1.1, s1=1.2)], C("biz_think"), em=["경고등 뜬 차"]),
+        L("글쓴이는 국토부랑 국회의원실에 진정까지 넣고 기다리는 중.",
+          [B("s05", "Stack of complaint documents and a pen on a desk next to a car key, close-up, text unreadable")],
+          C("lawyer"), em=["진정"]),
+        L("님들은 경고등 뜬 차, 보증보험 믿고 삼?", [B("s01", s0=1.0, s1=1.12)], C("biz_q"), fx=[("pop_bubble", "삼")]),
+    ]
+    build("slk200", lines, "유튜버 딜러 믿고 산", "벤츠 오픈카의 최후", "엔진경고등 뜬 차, 보증보험 믿고 샀다가",
+          "#유튜버 딜러 믿고 샀다가", "보배드림 베스트 1041142 (2026-10-19, 추천 292, 댓글 55)",
+          [("부산에서 장사하는 글쓴이, 주말 드라이브용 세컨카로 벤츠 SLK200(2015년식 11만km)", "원글 본문·댓글"),
+           ("유명 유튜버 딜러 영상 두 달 보고 8/23 수원행, 그 딜러는 안 나오고 다른 상호 딜러", "원글 본문"),
+           ("엔진경고등 뜬 차를 '보증보험 된다'는 말 믿고 구매, 1,600만원", "원글 본문·글쓴이 댓글"),
+           ("보험사 연락 한 달 넘게, 흡기 캠샤프트 위치센서 전기 오류 진단, 보험 대상 부품 아님 수리 불가", "원글 본문"),
+           ("딜러 '더 해줄 게 없다, 최선 다했다'", "원글 본문"),
+           ("민원·JTBC 제보·국토부·국회의원실 진정", "원글 본문"),
+           ("댓글 '유트브 믿지마세요'(32) vs '경고등뜬차를 그냥…'(26)", "원글 댓글")],
+          "유명 유튜버 딜러 영상만 믿고 수원까지 가서 산 벤츠 SLK200.\n엔진경고등이 떠 있었지만 보증보험 된다는 말을 믿었는데 돌아온 답은 수리 불가.\n님들은 경고등 뜬 차 사시겠어요?\n\n#중고차 #벤츠 #보증보험 #보배드림 #란빵",
+          "님들은 경고등 뜬 차, 보증보험 믿고 삼?",
+          "OBD2 스캐너, 자동차 진단기, 엔진경고등 리더기, 자동차 블랙박스 2채널, 차량용 휴대폰 거치대",
+          "중고차 성능점검 보증(자동차관리법 58조의4)은 usedcar30 편과 겹쳐 대본에서 뺌.", [B("s01", s0=1.0, s1=1.1)])
+
+
+if __name__ == "__main__":
+    for name in sys.argv[1:] or [k[3:] for k in list(globals()) if k.startswith("EP_")]:
+        globals()["EP_" + name]()

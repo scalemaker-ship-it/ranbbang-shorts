@@ -1,0 +1,1 @@
+{ "name": "ranbbang-remotion", "private": true, "scripts": { "dev": "remotion studio", "render": "remotion render" } }

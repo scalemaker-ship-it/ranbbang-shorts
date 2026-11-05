@@ -1,0 +1,140 @@
+{
+  "slug": "roadsterfly",
+  "type": "란빵 자동차, 커뮤니티 반응",
+  "source": "개드립 2026-10-16~17 테슬라 로드스터 반응 글 + Electrek 2026-10-15",
+  "title_line1": "\"이거 AI 아님?\"",
+  "title_line2": "진짜 나는 로드스터",
+  "hook": "공중제비 도는 로드스터 실제 영상",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "공중제비 도는 로드스터 실제 영상",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "에이 이거 AI 아냐? 뭐, 진짜라고?",
+      "say": "에이, 이거 에이아이 아냐? 뭐? 진짜라고?",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "toneup",
+      "exag": 0.95,
+      "img": 1
+    },
+    {
+      "text": "테슬라 신차가 진짜로 하늘을 날자 커뮤니티가 난리 남!",
+      "em": [
+        "하늘을"
+      ],
+      "em_color": "yellow",
+      "exag": 0.85,
+      "img": 1
+    },
+    {
+      "text": "비결은 탄소섬유 통에 꽉 눌러 담은 압축가스를 뿜는 추진기임!",
+      "say": "비결은 탄소섬유 통에 꽉 눌러 담은 압축가스를 뿜는 추진기 임!",
+      "em": [
+        "압축가스"
+      ],
+      "em_color": "yellow",
+      "exag": 0.8,
+      "img": 1
+    },
+    {
+      "text": "벽에 거꾸로 붙는 건, 팬이 바닥 공기를 빨아들여서 차를 꾹 눌러주는 원리!",
+      "em": [
+        "빨아들여서"
+      ],
+      "exag": 0.8,
+      "img": 1
+    },
+    {
+      "text": "와 이거 완전 카트라이더 부스터잖아!",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "toneup",
+      "exag": 0.95,
+      "img": 1
+    },
+    {
+      "text": "근데 타이어가 버팀? 버터 되겠는데?",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "exag": 0.9,
+      "img": 1
+    },
+    {
+      "text": "제일 센 로켓 트림은 시속 97킬로까지 0.59초도 안 걸림!",
+      "say": "제일 센 로켓 트림은 시속 구십칠 키로까지 영 점 오구 초도 안 걸림!",
+      "em": [
+        "0.59초"
+      ],
+      "em_color": "yellow",
+      "exag": 0.85,
+      "img": 1
+    },
+    {
+      "text": "근데 이거 어따 씀? 그리고 3억이잖아.",
+      "say": "근데 이거 어따 씀? 그리고 삼억이잖아!",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "exag": 0.9,
+      "img": 1
+    },
+    {
+      "text": "가격은 아직 비공개고, 예약금만 기본형 5만 달러, 쓰러스트 25만 달러임!",
+      "say": "가격은 아직 비공개고, 예약금만 기본형 오만 달러, 쓰러스트 이십오만 달러임!",
+      "em": [
+        "25만 달러"
+      ],
+      "em_color": "yellow",
+      "exag": 0.8,
+      "img": 1
+    },
+    {
+      "text": "예약금이 3억이면 차값은 30억이겠네!",
+      "say": "예약금이 삼억이면 차값은 삼십억이겠네!",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "toneup",
+      "exag": 0.95,
+      "img": 1
+    },
+    {
+      "text": "저거 지나가다 고라니도 빨려 들어가는 거 아냐?",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "exag": 0.9,
+      "img": 1
+    },
+    {
+      "text": "참고로 로켓 트림은 일반 도로 주행 자체가 안 됨!",
+      "em": [
+        "안 됨"
+      ],
+      "em_color": "yellow",
+      "exag": 0.85,
+      "img": 1
+    },
+    {
+      "text": "님들은 이 차 얼마면 살 것 같음?",
+      "exag": 0.85,
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}

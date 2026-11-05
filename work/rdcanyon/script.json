@@ -1,0 +1,104 @@
+{
+  "slug": "rdcanyon",
+  "type": "란빵 자동차, 테슬라 로드스터 시리즈",
+  "source": "Tesla Roadster Event 2026-10-15(받아쓰기) + 이블 크니블 1974 스네이크 리버 캐니언",
+  "title_line1": "차 5대 넘은 테슬라",
+  "title_line2": "다음 목표는 협곡",
+  "hook": "이블 크니블 협곡 점프 다시 하겠다는 테슬라",
+  "channel": "란빵",
+  "voice": "main",
+  "tts_engine": "myvoice",
+  "myvoice": "경모",
+  "myvoice_narration": "talk1",
+  "style": {
+    "sub_box": true,
+    "bar": "이블 크니블 협곡 점프 다시 하겠다는 테슬라",
+    "bar_count": null,
+    "watermark": ""
+  },
+  "lines": [
+    {
+      "text": "이블 크니블의 협곡 점프, 한 번 더 해봅시다.",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "차 5대를 날아서 넘은 테슬라가, 다음 목표로 협곡 점프를 예고함.",
+      "say": "차 다섯 대를 날아서 넘은 테슬라가, 다음 목표로 협곡 점프를 예고함.",
+      "em": [
+        "협곡 점프"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "이 협곡은 1974년에 한 스턴트맨이 로켓 바이크로 넘으려던 곳임.",
+      "say": "이 협곡은 천구백칠십사 년에 한 스턴트맨이 로켓 바이크로 넘으려던 곳임.",
+      "em": [
+        "1974년"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "근데 출발하자마자 낙하산이 먼저 펴져서, 협곡 아래로 떨어져 버림.",
+      "em": [
+        "낙하산이 먼저"
+      ],
+      "img": 1
+    },
+    {
+      "text": "그걸 이번엔 자동차로 하겠다고?",
+      "dialogue": true,
+      "speaker": 3,
+      "emotion": "surprise",
+      "img": 1
+    },
+    {
+      "text": "그러려면 엄청 빨라야 하는데, 이 차 최고속도는 시속 370킬로가 넘음.",
+      "say": "그러려면 엄청 빨라야 하는데, 이 차 최고속도는 시속 삼백칠십 킬로가 넘음.",
+      "em": [
+        "370킬로"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "그걸론 부족하죠. 음속의 절반은 찍어야죠.",
+      "dialogue": true,
+      "speaker": 2,
+      "emotion": "toneup",
+      "img": 1
+    },
+    {
+      "text": "음속의 절반이면 시속 600킬로가 넘음.",
+      "say": "음속의 절반이면 시속 육백 킬로가 넘음.",
+      "em": [
+        "600킬로"
+      ],
+      "em_color": "yellow",
+      "img": 1
+    },
+    {
+      "text": "양산은 2028년인데, 머스크가 이번엔 진짜라고 한 번 더 강조함.",
+      "say": "양산은 이천이십팔 년인데, 머스크가 이번엔 진짜라고 한 번 더 강조함.",
+      "em": [
+        "이번엔 진짜"
+      ],
+      "img": 1
+    },
+    {
+      "text": "님들은 협곡 점프 성공한다고 봄?",
+      "img": 1
+    },
+    {
+      "text": "구독!",
+      "emotion": "toneup",
+      "intensity": 2.0,
+      "outro": true,
+      "img": 1
+    }
+  ]
+}
